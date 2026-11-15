@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@+id/selectionBar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="?attr/colorSecondaryContainer" android:visibility="gone" app:navigationContentDescription="@string/clear_selection" app:navigationIconTint="?attr/colorOnSecondaryContainer" app:titleTextColor="?attr/colorOnSecondaryContainer"/>
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/bulkProgress" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminate="true" android:visibility="gone"/>
+        <com.google.android.material.button.MaterialButtonToggleGroup android:id="@+id/sourceToggle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_marginTop="10dp" android:layout_marginEnd="12dp" android:layout_marginBottom="4dp" app:selectionRequired="true" app:singleSelection="true">
+            <Button android:id="@+id/btnWhatsapp" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/whatsapp"/>
+            <Button android:id="@+id/btnBusiness" style="?attr/materialButtonOutlinedStyle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/whatsapp_business"/>
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:clipToPadding="false" android:paddingStart="6dp" android:paddingTop="6dp" android:paddingEnd="6dp" android:paddingBottom="88dp"/>
+                    <LinearLayout android:id="@+id/emptyGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center" android:gravity="center_horizontal" android:orientation="vertical" android:padding="32dp" android:visibility="gone">
+                        <ImageView android:id="@+id/emptyIllustration" android:layout_width="96dp" android:layout_height="96dp" android:background="@drawable/bg_empty_illustration" android:padding="24dp" android:contentDescription="@null" android:src="@drawable/ic_nav_status" app:tint="?attr/colorOutline"/>
+                        <TextView android:id="@+id/emptyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:textAppearance="?attr/textAppearanceTitleLarge"/>
+                        <TextView android:id="@+id/emptyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:gravity="center" android:textAppearance="?attr/textAppearanceBodyMedium"/>
+                        <Button android:id="@+id/btnChoose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/choose_folder"/>
+                        <Button android:id="@+id/btnRefresh" style="?attr/materialButtonOutlinedStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/refresh"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

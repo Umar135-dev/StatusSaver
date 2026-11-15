@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Status Saver</string>
+    <!--  Onboarding  -->
+    <string name="onboarding_tagline">Keep the photos and videos you like from statuses</string>
+    <string name="onboarding_step1">View a status in WhatsApp</string>
+    <string name="onboarding_step2">Allow access to the status folder once</string>
+    <string name="onboarding_step3">Tap a status to save, share or repost it</string>
+    <string name="get_started">Get started</string>
+    <string name="disclaimer">Not affiliated with or endorsed by WhatsApp. Everything stays on your phone.</string>
+    <!--  Navigation and tabs  -->
+    <string name="nav_status">Status</string>
+    <string name="nav_saved">Saved</string>
+    <string name="nav_settings">Settings</string>
+    <string name="tab_images">Images</string>
+    <string name="tab_videos">Videos</string>
+    <string name="tab_with_count">%1$s (%2$d)</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Business</string>
+    <string name="select_all">Select all</string>
+    <!--  Empty and permission states  -->
+    <string name="choose_folder">Choose status folder</string>
+    <string name="refresh">Refresh</string>
+    <string name="need_folder_title">Allow access to statuses</string>
+    <string name="need_folder_text">Choose the .Statuses folder for %1$s, then tap \"Use this folder\". If the folder is missing, view a status in %1$s and try again. If your picker has a Show hidden files option, turn it on.</string>
+    <string name="wrong_folder">Could not connect. Choose the .Statuses folder for %1$s and confirm access.</string>
+    <string name="folder_picker_unavailable">This device has no compatible system folder picker.</string>
+    <string name="empty_title">No statuses yet</string>
+    <string name="empty_text">Open %s and view a few statuses, then come back and pull down to refresh.</string>
+    <string name="empty_saved_title">Nothing saved yet</string>
+    <string name="empty_saved_text">Statuses you save appear here.</string>
+    <!--  Actions  -->
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="repost">Repost</string>
+    <string name="delete">Delete</string>
+    <string name="save_count">Save %1$d</string>
+    <string name="delete_count">Delete %1$d</string>
+    <string name="saved_ok">Saved to your gallery</string>
+    <string name="saved_failed">Could not save this status</string>
+    <string name="saved_count">Saved %1$d</string>
+    <string name="deleted_ok">Deleted</string>
+    <string name="deleted_count">Deleted %1$d</string>
+    <string name="delete_failed">Could not delete this file</string>
+    <string name="failed_suffix">, %1$d failed</string>
+    <string name="delete_title">Delete saved statuses?</string>
+    <string name="delete_message">%1$d selected files will be removed from your gallery.</string>
+    <string name="page_position">%1$d of %2$d</string>
+    <string name="whatsapp_missing">WhatsApp is not installed</string>
+    <!--  Settings  -->
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_folders">Folder access</string>
+    <string name="settings_about">About</string>
+    <string name="theme_title">Theme</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="folder_allowed">Allowed. Tap to remove access.</string>
+    <string name="folder_not_set">Not set. Choose it from the Status tab.</string>
+    <string name="folder_nothing_to_remove">Nothing to remove</string>
+    <string name="folder_remove_title">Remove folder access?</string>
+    <string name="folder_remove_message">The app will ask for the %s status folder again next time.</string>
+    <string name="folder_remove">Remove</string>
+    <string name="folder_whatsapp">WhatsApp status folder</string>
+    <string name="folder_business">WhatsApp Business status folder</string>
+    <string name="privacy_title">Privacy</string>
+    <string name="privacy_text">No account, no internet permission, no tracking. Statuses are copied only when you save them, into Pictures/StatusSaver and Movies/StatusSaver.</string>
+    <string name="version_title">Version</string>
+    <string name="version_value">%s</string>
+    <string name="gallery_error_title">Couldn’t load media</string>
+    <string name="gallery_error_text">Try refreshing to load your media again.</string>
+    <string name="preview_close">Close preview</string>
+    <string name="share_failed">Couldn’t share this status.</string>
+    <string name="selection_count">%1$d selected</string>
+    <string name="clear_selection">Clear selection</string>
+    <string name="onboarding_title">Allow access to statuses</string>
+    <string name="onboarding_message">Tap a button, then choose the .Statuses folder and tap \"Use this folder\".</string>
+    <string name="connect_whatsapp">Connect WhatsApp</string>
+    <string name="connect_business">Connect WhatsApp Business</string>
+    <string name="sheet_title">Why folder access is needed</string>
+    <string name="sheet_point1">Android isolates app files. Statuses live inside the WhatsApp media folder.</string>
+    <string name="sheet_point2">Granting access allows Status Saver to read status photos and videos directly.</string>
+    <string name="sheet_point3">Your files never leave your device. Status Saver works completely offline.</string>
+    <string name="got_it">Got it</string>
+
+</resources>
